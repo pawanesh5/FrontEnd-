@@ -1,0 +1,29 @@
+body {
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+}
+
+.instructions {
+    margin: 8px;
+}
+
+.btn {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: transparent;
+    padding: 8px;
+    margin: 0 8px;
+    user-select: none;
+}
+
+.btn:hover {
+    background: #f8bbd0;
+}
+
+.btn:active {
+    background: #880e4f;
+    color: white;
+}
