@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid </title>
+    <style>
+        p {
+            clear: both;
+            padding: 0;
+            margin: 0;
+        }
+        /*  COLUMN SETUP  */
+        
+        .col {
+            display: block;
+            float: left;
+            margin: 1% 0 1% 1%;
+            padding: 8px;
+        }
+        /*  GRID OF THREE  */
+        
+        .span_1_of_3 {
+            width: 30%;
+            border-right: 1px solid #aaa;
+        }
+        
+        .span_2_of_3 {
+            width: 30%;
+            border-right: 1px solid #aaa;
+        }
+        
+        .span_3_of_3 {
+            width: 30%;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .span_1_of_3 {
+                width: 96%;
+            }
+            .span_2_of_3 {
+                width: 46.2%;
+                border-right: 1px solid #aaa;
+            }
+            .span_3_of_3 {
+                width: 46.2%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section group">
+        <div class="col span_1_of_3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quam aliquam explicabo ratione inventore quasi beatae maxime temporibus non. Inventore fugit praesentium sint beatae, saepe blanditiis consequatur ea esse dicta!
+        </div>
+        <div class="col span_2_of_3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum animi fugiat, veritatis tempora praesentium optio quae mollitia vero! Quas aperiam voluptates non alias dolorem suscipit modi consectetur quasi nisi recusandae.
+        </div>
+        <div class="col span_3_of_3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laborum sint aperiam, vero non optio esse iusto tempora, sequi quod sit nostrum exercitationem alias. In quam nostrum laudantium officia ipsum!
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, maxime deserunt? Placeat, consequatur. Quam quia saepe harum ab dolor voluptate sequi, quis asperiores fugiat fugit autem aspernatur cum eveniet expedita.</p>
+    </div>
+
+</body>
+
+</html>
