@@ -1,0 +1,610 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayRoute</title>
+    <link rel="stylesheet" href="style.css" >
+    <style>
+                
+      @media only screen and (min-width: 886px) {
+      body {
+        width: 100%;
+      }
+      .nav-hr{display: none;
+      }
+        
+
+      }
+      /* tabs */
+      @media only screen and (max-width: 1024px) {
+        body {
+          width: 100%;
+        }
+        /* navigation */
+        .navbar{
+          background-color: rgb(76, 188, 233);
+        }
+        .navbar-div-1{
+          text-align: left;
+          width: 100%;
+        }
+        .navbar-div-2{
+          text-align: center;
+          width: 100%;
+        }
+        .nav-btn{
+          width: 100%;
+        }
+        .nav-btn-1{
+          margin-right: 5vh;
+        }
+        .nav-btn-2{
+          margin-right: 5vh;
+        }
+        .nav-li {
+          margin-left: 2.5vw;
+          text-decoration: none;
+          display: block;
+        }
+        .nav-li-a {
+          color: white;
+        }
+        .nav-hr{
+          width: 100%;
+        }
+        /* shopping mall */
+        .shopping-mall-img {
+          height: 20vh;
+        }
+        .shopping-mall-h3 {
+          margin-left: 3vh;
+        }
+        .shopping-mall-p {
+          margin-left: 3vh;
+        }
+        .shopping-mall-btn {
+          margin-left: 3vh;
+        }
+        /* checkout */
+        .checkout {
+          height: 25vh;
+        }
+        .checkout-gif {
+          height: 20vh;
+        }
+        .checkout-div-1 {
+          width: 40%;
+        }
+        .checkout-div-2 {
+          margin-left: 2vh;
+          width: 55%;
+        }
+        /* refund */
+        .refund {
+          height: 25vh;
+        }
+        .refund-img {
+          height: 20vh;
+          float: left;
+        }
+        .refund-h3{
+          margin-left: 3vh;
+        }
+        .refund-p{
+          margin-left: 3vh;
+        }
+        .refund-btn{
+          margin-left: 3vh;
+        }
+        /* payment */
+        .payment {
+          height: 25vh;
+        }
+        .payment-img {
+          height: 20vh;
+        }
+        /* online-shopping */
+
+        .online-shopping {
+          height: 25vh;
+        }
+        .online-shopping-h3{
+          margin-left: 3vh;
+        }
+        .online-shopping-p{
+          margin-left: 3vh;
+        }
+        .online-shopping-img {
+          width: 20vh;
+        }
+        .online-shopping-btn {
+          margin-left: 3vh;
+        }
+        /* logo */
+        .logo{
+          height: 15vh;
+        }
+        .logo-h3{
+          margin-left: 0vh;
+        }
+        .logo-img-1 {
+          margin-right: 15vh;
+        }
+        .logo-img-2 {
+          margin-right: 15vh;
+        }
+
+        /* sign-up */
+        .sign-up-p {
+          padding-left: 5vh;
+          padding-right: 5vh;
+        }
+        #sign-up-br{
+          display: none;
+        }
+        /* footer */
+        .footer-p1 {
+            margin-left: 6vh;
+        }
+        .footer-p2 {
+            margin-left: 6vh;
+        }
+      }
+
+      /* mobile */
+      @media only screen and (max-width: 600px) {
+        body {
+          width: 100%;
+        }
+        /* navigation */
+        .navbar{
+          background-color: rgb(76, 188, 233);
+        }
+        .nav-img {
+          height: 4vh;
+        }
+        .navbar-div-1{
+          text-align: left;
+          width: 100%;
+        }
+        .navbar-div-2{
+          text-align: center;
+          width: 100%;
+        }
+        .nav-btn{
+          width: 100%;
+        }
+        .nav-btn-1{
+          margin-right: 5vh;
+        }
+        .nav-btn-2{
+          margin-right: 5vh;
+        }
+        .nav-li {
+          margin-left:0vw;
+          text-decoration: none;
+          display: block;
+        }
+        .nav-li-a {
+          color: white;
+        }
+        .nav-hr{
+          width: 100%;
+        }
+        /* video */
+        .video-para {
+          margin-top: 8vh;
+          font-size: 1.5em;
+        }
+
+        .payroute-business{
+          height: 15vh;
+        }
+        .payroute-business-p{
+          font-size: 0.7em;
+        }
+        .payroute-business-p1{
+          display: none;
+        }
+        /* shopping mall */
+        .shopping-mall-div-1{
+          text-align: center;
+          width: 100%;
+          float: right;
+        }
+        .shopping-mall-div-2{
+          text-align: center;
+          float: left;
+          width: 100%;
+        }
+        .shopping-mall-img {
+          height: 20vh;
+        }
+        .shopping-mall-h3 {
+          margin-top: 0vh;
+          margin-left: 3vh;
+          font-size: 0.9em;
+        }
+        .shopping-mall-p {
+          margin-left: 3vh;
+          font-size: 0.7em;
+        }
+        .shopping-mall-btn {
+          margin-left: 3vh;
+          font-size: 0.7em;
+        }
+        /* checkout */
+        .checkout {
+          height: 50vh;
+        }
+        .checkout-gif {
+          float: left;
+          margin-left: 12vh;
+          height: 20vh;
+        }
+        .checkout-div-1 {
+          width: 100%;
+          text-align: center;
+        }
+        .checkout-div-2 {
+          margin-left: 2vh;
+          text-align: center;
+          width: 100%;
+        }
+        .checkout-h3 {
+          font-size: 0.9em;
+        }
+        .checkout-p {
+          font-size: 0.7em;
+        }
+        .checkout-btn{
+          font-size: 0.7em;
+        }
+        /* refund */
+        .refund {
+          height: 50vh;
+        }
+        .refund-div-1{
+          text-align: center;
+          width: 100%;
+        }
+        .refund-div-2{
+          width: 100%;
+        }
+        .refund-img {
+          margin-left: 17vh;
+          height: 15vh;
+        }
+        .refund-h3{
+          font-size: 0.9em;
+          margin-left: 3vh;
+        }
+        .refund-p{
+          font-size: 0.7em;
+          margin-left: 3vh;
+        }
+        .refund-btn{
+          font-size: 0.7em;
+          margin-left: 1vh;
+        }
+        /* payment */
+        .payment {
+          height: 50vh;
+        }
+        .payment-div-1 {
+          margin-right: 17vh;
+          width: 100%;
+        }
+        .payment-div-2 {
+          text-align: center;
+          width: 100%;
+        }
+        .payment-img {
+          height: 20vh;
+        }
+        .payment-h3{
+          font-size: 0.9em;
+        }
+        .payment-p{
+          font-size: 0.7em;
+        }
+        .payment-btn{
+          font-size: 0.7em;
+        }
+        /* online-shopping */
+
+        .online-shopping {
+          height: 50vh;
+        }
+        .online-shopping-div-1{
+          text-align: center;
+          width: 100%;
+        }
+        .online-shopping-div-2{
+          width: 100%;
+        }
+        .online-shopping-h3{
+          font-size: 0.9em;
+          margin-left: 3vh;
+        }
+        .online-shopping-p{
+          font-size: 0.7em;
+          margin-left: 3vh;
+        }
+        .online-shopping-img {
+          margin-left: 18vh;
+          width: 20vh;
+        }
+        .online-shopping-btn {
+          font-size: 0.7em;
+          margin-left: 0vh;
+        }
+        /* logo */
+        .logo{
+          height: 30vh;
+        }
+        .logo-h3{
+          margin-left: 0vh;
+        }
+        .logo-img-1 {
+          height: 5vh;
+          margin-right: 15vh;
+        }
+        .logo-img-2 {
+          margin-right: 15vh;
+        }
+        .logo-img{
+          height: 10vh;
+        }
+
+        /* sign-up */
+        .sign-up{
+          height: 30vh;
+        }
+        .sign-up-p {
+          padding-left: 5vh;
+          padding-right: 5vh;
+        }
+        #sign-up-br{
+          display: none;
+        }
+        /* footer */
+        .footer-li {
+          margin-left: 0vh;
+        }
+        .footer-li-a {
+          margin-left: 1vh;
+        }
+        .footer2-li-a {
+          margin-left: 1vh;
+        }
+        .footer3-li-a {
+          margin-left: 1vh;
+        }
+        .footer-p1 {
+            margin-left: 6vh;
+        }
+        .footer-p2 {
+            margin-left: 6vh;
+        }
+        .footer-hr{
+          width: 80%;
+        }
+      }
+   
+      </style>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="navbar-div-1">
+        <a href="#"><img class="nav-img" src="./assets/PayRoute_Logo.png" /></a>
+      </div>
+      <div class="navbar-div-2">
+        <ul class="nav-ul ">
+          <li class="nav-li"><a href="" class="nav-li-a">INDIVIDUAL</a></li>
+          <li class="nav-li"><a href="" class="nav-li-a">BUISNESS</a></li>
+          <li class="nav-li"><a href="" class="nav-li-a">PARTNER</a></li>
+          <li class="nav-li"><a href="" class="nav-li-a">USEFUL INFO</a></li>
+        </ul>
+      </div>
+      <hr class="nav-hr"/>
+      <div class="nav-btn">
+        <button class="nav-btn-1">Login</button>
+      </div>
+      <div class="nav-btn">
+        <button class="nav-btn-2">Sign Up</button>
+      </div>
+      
+    </nav>
+    <!-- video section -->
+    <section class="section-video ">
+      <div class="video_p ">
+        <p class="video-para">
+          Take care of you and yours at home,<br />and we can take care of you
+          online.
+        </p>
+        <button class="sign-up-btn">Sign Up for Free</button>
+      </div>
+      <div class="video-section">
+        <video autoplay muted  width="98%">
+          <source
+            src="./assets/IN_everyday_essentials_desktop_v5.mp4"
+            type="video/mp4" 
+          />
+        </video>
+      </div>
+    </section>
+
+    <!-- payroute for business -->
+    <section class="payroute-business ">
+      <p class="payroute-business-p">
+        Looking for PayRoute Business Solutions?<p class="payroute-business-p1 payroute-business-p">Whether you are a Freelancer
+        or a business, we are here to support you.</p>
+      </p>
+      <button class="payroute-business-btn">PayRoute for Business</button>
+    </section>
+
+    <!-- Shopping Mall -->
+    <section class="shopping-mall">
+
+      <div class="shopping-mall-div-1">
+        <h3 class="shopping-mall-h3">The world is your shooping mall.</h3>
+        <p class="shopping-mall-p">
+          From big brands to little boutiques, you can shop millions of online
+          stores with <br />PayRoute
+        </p>
+        <button class="shopping-mall-btn">Shop Now</button>
+      </div>
+
+      <div class="shopping-mall-div-2">
+        <img
+          class="shopping-mall-img"
+          src="./assets/shopping.png"
+          alt="shopping-mall"
+        />
+      </div>
+    </section>
+
+      <!-- checkout  -->
+      <section class="checkout">
+        <div class="checkout-div-1">
+          <img class="checkout-gif" src="./assets/fly.gif" alt="checkout gif" />
+        </div>
+        <div class="checkout-div-2">
+          <h3 class="checkout-h3">Fly throung checkout securely</h3>
+          <p class="checkout-p">
+            Checkout online and apps in seconds.Whether shopping at your usual
+            store or buying<br />
+            old essentials somewhere new,Paypal helps keep checkout fast and your
+            purchase <br />protected.
+          </p>
+          <button class="checkout-btn">Checkout with One Touch</button>
+        </div>
+      </section>
+
+      <!-- refund -->
+      <section class="refund">
+
+        <div class="refund-div-1">
+          <h3 class="refund-h3">Returning a Purchase?Get shipping refund</h3>
+          <p class="refund-p">
+            When you return a purchase you bought with PayPal, you can get your
+            return shipping <br />cost refunding.
+          </p>
+          <button class="refund-btn">Learn More</button>
+        </div>
+
+        <div class="refund-div-2">
+          <img class="refund-img" src="./assets/Dress-FreeReturnShipping.gif" />
+        </div>
+      </section>
+
+      <!-- payment -->
+      <section class="payment">
+        <div class="payment-div-1">
+          <img class="payment-img" src="./assets/pay-v2.png" alt="checkout gif" />
+        </div>
+        <div class="payment-div-2">
+          <h3 class="payment-h3">Pay it the way you want</h3>
+          <p class="payment-p">
+            Link all your credit card and debit card and choose which one to use
+            at checkout.Shopping online<br />has never been this easy.
+          </p>
+          <button class="payment-btn">Link your preferred card</button>
+        </div>
+      </section>
+
+      <!-- online-shopping -->
+      <section class="online-shopping">
+        <div class="online-shopping-div-1">
+          <h3 class="online-shopping-h3">Shopping online with confidence</h3>
+          <p class="online-shopping-p">
+            Stay more secure when shopping-online-with 24/7 fraud monitoring,
+            Buyer Protection*,and<br />
+            refund on return shipping costs.
+          </p>
+          <button class="online-shopping-btn">Find Out More</button>
+        </div class="online-shopping-div-2">
+        <div>
+          <img class="online-shopping-img" src="./assets/confidence.png" />
+        </div>
+      </section>
+
+      
+      <!-- logos -->
+      <section class="logo">
+        <div class="logo-div-1">
+          <h3 class="logo-h3">Checkout at millions of brands you love</h3>
+        </div>
+          <div class="logo-div-2">
+          <img class="logo-img-1" src="./assets/asos_v3a.png" alt="asos" />
+          <img class="logo-img-2" src="./assets/udemy_v1.png" alt="udemy_v1" />
+          <img class="logo-img"   src="./assets/banggood_v1.png" alt="banggood_v1"/>
+        </div>
+      </section>
+
+       <!-- signup -->
+       <section class="sign-up">
+        <h3 class="sign-up-p">
+          Join the global community pf PayPal users who are shopping and
+          receiving payments <br id="sign-up-br" />
+          securely every day.
+        </h3>
+        <button class="sign-up-btn">Sign Up Now</button>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-div-1">
+          <ul class="row footer-ul">
+            <li class="footer-li"><a class="footer-li-a" href="">Help</a></li>
+            <li class="footer-li"><a class="footer-li-a" href="">Contact</a></li>
+            <li class="footer-li"><a class="footer-li-a" href="">Fees</a></li>
+            <li class="footer-li"><a class="footer-li-a" href="">Security</a></li>
+            <li class="footer-li"><a class="footer-li-a" href="">Shop</a></li>
+            <li class="footer-li"><a class="footer-li-a" href="">Feedback</a></li>
+          </ul>
+          <hr class="footer-hr" />
+        </div>
+        
+        <div class="footer-div-2">
+          <ul class="row footer-ul">
+            <li class="footer-li"><a class="footer2-li-a" href="">About</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Newsroom</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Jobs</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Sitemap</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Developers</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Partners</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Newsroom</a></li>
+          </ul>
+          <hr class="footer-hr" style="color: grey;"/>
+        </div>
+
+        <div class="footer-div-3">
+          <ul class="row footer-ul">
+            <li class="footer-li"><a class="footer2-li-a" href="">© 1999-2021</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Accessibility</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Privacy</a></li>
+            <li class="footer-li"><a class="footer2-li-a" href="">Legal</a></li>
+          </ul>
+        </div>
+        <p class="footer-p1">
+          PayRoute Services in India are provided by PayRoute Payments Private
+          Limited. Users are advised to read the
+          <a href="#" class="footer-p1-a">terms and conditions</a> carefully.
+        </p>
+        <p class="footer-p2">
+          When u visit or interact with our sites, services, application , tools
+          or messaging, we or our authorized service provider may use cookies,
+          web beacons, and other <br />
+          similar technologies for storing information to help provide you with
+          a better, faster and safer experience and for advertising purposes.
+          Learn more <a href="#" class="footer-p1-a">here.</a>
+        </p>
+      </footer>
+    
+  </body>
+</html>
+
+
