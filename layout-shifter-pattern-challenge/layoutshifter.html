@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layoutshifter</title>
+
+    <style>
+        body
+        {
+            height: 1024px;
+        }
+        
+        div
+        {
+           
+            margin-top: 3px;
+            margin-left: 5px;
+            text-decoration: none;
+        }
+
+        #head
+        {
+            overflow: hidden;
+            background-color: rgb(8, 8, 8);
+            text-align: center;
+            height: 5%;
+            color: white;
+            font-size: 40px;
+        }
+
+        .first
+        {
+            padding-top: 35px;
+            border: solid;
+        }
+
+        .second
+        {
+           border: solid;
+        }
+
+        .third
+        {
+            border: solid;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(253, 251, 251) ;
+        }
+
+        @media only screen and ( min-device-width:481px){
+            .main{
+                display: flex;
+            }
+            .main2{
+                display:block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">The New York Times </h1>
+    <div id="head">
+        <a href="#Home">Home</a>
+        <a href="#India">India</a>
+        <a href="#World">World</a>
+        <a href="#Cities">Cities</a>
+        <a href="#Sports">Sports</a>
+        <a href="#entertainment">Entertainment</a>
+    </div>
+    <div class="main">
+        <div class="first">
+          How space Became the Next 'Great Power' Contest Between the U.S and China <br>
+              <br>
+             <p style="font-size: 12px;">The Biden adminstration faces not only waves of Chinese antisatellite wepons but a history of jumbeled responses to the intensifying threat. </p> 
+        </div>
+        <div class="main2">
+            <div class="second">
+                <p>How West Virginia Became a U.S Leader in Vaccine Rollout</p> 
+              <p style="font-size: 12px;">About 9 percent of all West Virginians have received a first dose of the coronavirus vaccine, a larger segment than almost every other status. Yet the state provides the clearest picture of a more fundamental problem: Even the most effecient operations do not have enough shots for everyone. </p>
+            </div>
+          <div class="third">
+          <p>In Rural Montana, a Hope That Biden Will Reopen the Rails</p>
+          <p style="font-size: 12px;"> The north coast hiawatha has't run through Montana since 1979. Now cities like Billings, Bozeman,Helen and Missoula are hoping that "Amtrak joe" will help fund rail service</p>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
