@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        }
+
+      .box
+      {
+        width: 100%;
+      }
+
+      .dark_blue {
+        background-color: #003476;
+        color: #efefef;
+      }
+
+      .light_blue {
+        background-color: #0062D2;
+      }
+
+      .sky {
+        background-color: #B4D2F7;
+      }
+
+      .shadeblue {
+        background-color: #D5DFEF;
+      }
+
+      .grey {
+        background-color: #DFE1E5;
+        }
+
+      .container{
+        display: flex;
+        flex-flow: row wrap;
+        height:500px;
+      }
+
+      @media screen and (max-width: 480px) {
+        .light_blue,.sky,.shadeblue,.grey{
+            width:100%;
+          
+        }
+      }
+      @media screen and (min-width: 370px) {
+         .dark_blue{
+          width: 100%;
+        }
+      }
+      @media screen and (min-width:370px) {
+        .light_blue{
+          width: 100%;
+        }
+        .sky,.shadeblue{
+          width: 100%;
+        }
+        .grey{
+          width:100%;
+        }
+      }
+      
+    </style>
+</head>
+
+<body>
+    <h1>mobile</h1> 
+<div class="container">
+      <div class="box body dark_blue"></div>
+      <div class="box body light_blue"></div>
+      <div class="box body sky"></div>
+      <div class="box body shadeblue"></div>
+      <div class="box body grey"></div>
+      </div>
+</body>
+
+</html>
